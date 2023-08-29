@@ -1,0 +1,8 @@
+name: "Merge or rebase"
+author: lukaszachy
+runs:
+  using: "composite"
+  steps:
+  - name: Run the script
+    run: python3 ${{ github.action_path }}/babysitter.py
+    shell: bash
